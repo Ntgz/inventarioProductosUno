@@ -1,0 +1,13 @@
+<h3>{{titulo}}</h3>
+
+<div *ngIf="parametro">
+    <h3>prueba de parametros: {{parametro}}</h3>
+</div>
+
+<div *ngIf="!parametro">
+    <button (click)="redirigir()">Ir a la página con parametro</button>
+</div>
+
+<div *ngIf="!parametro">
+    <button (click)="redirigirDos()">Ir al home</button>
+</div>
